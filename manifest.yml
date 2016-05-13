@@ -2,5 +2,8 @@
 applications:
 - name: railspong
   memory: 256M
-  services:
-  - mysql
+  env:
+    DATABASE_URL: "sqlite3:database.sqlite"
+
+  # services:
+  # - mysql
